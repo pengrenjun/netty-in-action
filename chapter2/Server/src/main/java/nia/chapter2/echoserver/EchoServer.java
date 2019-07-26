@@ -22,16 +22,14 @@ public class EchoServer {
         this.port = port;
     }
 
-    public static void main(String[] args)
-        throws Exception {
-        if (args.length != 1) {
-            System.err.println("Usage: " + EchoServer.class.getSimpleName() +
-                " <port>"
-            );
-            return;
-        }
-        int port = Integer.parseInt(args[0]);
-        new EchoServer(port).start();
+    public static void main(String[] args) throws Exception {
+//        if (args.length != 1) {
+//            System.err.println("Usage: " + EchoServer.class.getSimpleName() +
+//                " <port>"
+//            );
+//            return;
+//        }
+        new EchoServer(7001).start();
     }
 
     public void start() throws Exception {
